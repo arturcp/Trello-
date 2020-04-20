@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Trello++",
+  "version": "0.1",
+  "permissions": [
+    "tabs",
+    "alarms"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://trello.com/*"],
+      "js": [
+        "lib/utils.js",
+        "models/board.js",
+        "content.js"
+      ],
+      "run_at" : "document_end"
+    }
+  ],
+  "background": {
+    "scripts": [
+      "lib/utils.js",
+      "models/create-card-rule.js",
+      "models/rules.js",
+      "background.js"
+    ],
+    "persistent": false
+  }
+}
