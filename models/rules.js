@@ -2,9 +2,9 @@ var Rules = {
   _rules: [
     new CreateCardRule({ minDay: 1, maxDay: 5, text: 'Pagar Vivo fibra' }),
     new CreateCardRule({ minDay: 1, maxDay: 5, text: 'Pagar cartão de crédito do Nubank' }),
-    new CreateCardRule({ minDay: 1, maxDay: 5, text: 'Pagar conta da Enel' }),
-    new CreateCardRule({ minDay: 1, maxDay: 5, text: 'Pagar cartão de crédito do Itaú' }),
-    new CreateCardRule({ minDay: 1, maxDay: 5, text: 'Pagar condomínio' })
+    new CreateCardRule({ minDay: 4, maxDay: 8, text: 'Pagar conta da Enel' }),
+    new CreateCardRule({ minDay: 7, maxDay: 11, text: 'Pagar cartão de crédito do Itaú' }),
+    new CreateCardRule({ minDay: 23, maxDay: 27, text: 'Pagar condomínio' })
   ],
 
   apply: function(tabId) {
